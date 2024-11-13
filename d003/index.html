@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D003</title>
+
+
+
+    <style>
+button{padding: 30px;
+font-size: 12pt;
+font-style: italic;
+    }
+    
+    
+    </style>
+
+</head>
+<body>
+
+    <h1>Antes e depois</h1>
+    <button onclick ="inicio()">Antecessor e Sucessor</button>
+
+    <script>
+      function inicio(params) {
+        var numero = window.prompt('digite um numero inteiro qualquer!')
+        numero = parseInt(numero);//converte string para numero 
+
+alert(`Antes do ${numero} , temos o número ${numero -1}.
+E depois de ${numero },temos o número ${numero +1}.`)
+      }
+
+    </script>
+</body>
+</html>

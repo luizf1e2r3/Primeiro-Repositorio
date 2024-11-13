@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d005</title>
+    <style>
+
+
+    </style>
+</head>
+
+
+<body>
+<h1>Converso de medidas</h1>
+<button onclick="inicio()">Converter</button>
+<section id="resultado"></section>
+
+
+
+
+
+<script>
+function inicio(params) {
+    var dis =prompt('digite uma distancia em metros (m)')
+    var res =document.getElementById('resultado')
+    var num =parseFloat(dis)
+    res.innerHTML= `<p><strong>A distancia de ${dis} metros ,corresponde a..
+        
+        
+        </strong><br> ${num /1000} quilômetros (Km)
+        
+        
+        <br>${(num /100).toPrecision(4)/*.toFixed(3)*/} hectômetros(Hm)
+        
+        <br>  ${(num/10).toPrecision()/*toFixed(3)*/} decâmetros (Dam)
+        
+        <br>${(num *10).toFixed(3) } decimetro (dm)
+        
+        <br>${num *100} centímetros (cm)
+        
+        <br>${num *1000} milímetros (mm)`
+}
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

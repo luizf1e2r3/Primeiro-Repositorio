@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D004</title>
+
+
+    <style>/*
+.n1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}*/
+        button{
+            font-size: 18pt;
+            padding: 35px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <h1>Calculando o troco </h1>
+
+
+<div class="n1">
+ <button onclick="clicou()">Comprar Produtos</button>
+</div>
+
+
+
+
+
+
+
+
+<script>
+    function clicou(params) {
+        var produto = prompt('Que produto você está comprando?');
+        var valor = parseFloat(prompt(`Quanto custa ${produto} que você está comprando?`));
+        var din = parseFloat(prompt(`Qual foi o valor que você deu para pagar o ${produto}?`));
+        var troco = din - valor;
+
+        alert(`Você comprou ${produto} que custou ${valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}.
+Deu ${din.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} em dinheiro e vai receber ${troco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} de troco.
+Volte sempre!`);
+    }//parseFloat converte uma string em um número de ponto flutuante (ou seja, um número decimal).
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
